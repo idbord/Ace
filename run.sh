@@ -1,1 +1,1 @@
-nohup python $(pwd)/run.py > backup.log 2>&1 &
+nohup python $(pwd)/run.py > /etc/ace.log 2>&1 &

@@ -62,6 +62,8 @@ bucket_name = ''
 backup_circle = 86400
 ```
 #### 注：
+***请一定在root用户下执行脚本，***且脚本运行的日志文件路径为/etc/ace.log
+
 脚本的实现很简单，只要熟悉linux的基本使用，再加上七牛的api文档就OK了
 
 不过前提是，你得先有一个已经认证的七牛账号，如果没有点这里[注册](https://portal.qiniu.com/signup?code=3li1yib3yqg5u)吧,强行安利一下=-=

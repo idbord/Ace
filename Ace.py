@@ -15,7 +15,7 @@ class Ace:
     def compass_file(cls, path):
         filename = path.split('/')[-1]
         timestamp = time.strftime("%Y%m%d")
-        target = "{}_{}.tar".format(filename, timestamp)
+        target = "{}_{}.tar.gz".format(filename, timestamp)
         command = "tar -zcvf {} {}".format(target, path)
         subprocess.call(command, shell=True)
         return target
@@ -24,7 +24,7 @@ class Ace:
     def get_mysql_data(cls, db, path=None):
         timestamp = time.strftime("%Y%m%d")
         path = path is None and "/var/lib/mysql/" or path
-        target = "mysql_{}_{}.tar".format(db, timestamp)
+        target = "mysql_{}_{}.tar.gz".format(db, timestamp)
         command = "tar -zcvf {} {}{}".format(target, path, db)
         subprocess.call(command, shell=True)
         return target

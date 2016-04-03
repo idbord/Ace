@@ -4,6 +4,10 @@
 Ace is a simple script that is used to backup databases and projects on server, and upload them to qiniu automaticaly.
 
 ## 使用说明
+#### 安装七牛SDK
+```py
+pip install qiniu
+```
 #### 获得脚本
 ```sh
 git clone git@github.com:idbord/Ace.git
@@ -13,7 +17,6 @@ git clone git@github.com:idbord/Ace.git
 cd Ace
 ```
 进入项目目录，新建config.py，参考config_example.py，修改自己的配置文件
-
 #### 运行脚本
 配置完之后，切换到超级用户，
 ```sh
